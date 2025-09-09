@@ -19,7 +19,6 @@ public class Atividade {
         this.dataCriacao = LocalDateTime.now();
     }
 
-    // Getters e Setters
     public int getId() {
         return id;
     }
@@ -64,4 +63,5 @@ public class Atividade {
                 "ID: %d | %s %s\n  Descrição: %s\n  Criada em: %s\n",
                 id, status, titulo, descricao, dataCriacao.format(formatter));
     }
+
 }
