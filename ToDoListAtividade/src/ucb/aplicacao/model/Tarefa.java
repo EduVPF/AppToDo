@@ -3,7 +3,7 @@ package ucb.aplicacao.model;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Atividade {
+public class Tarefa {
 
     private int id;
     private String titulo;
@@ -65,3 +65,4 @@ public class Atividade {
     }
 
 }
+
