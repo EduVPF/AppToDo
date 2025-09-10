@@ -1,14 +1,14 @@
 package ucb.aplicacao.cli;
 
-import ucb.aplicacao.model.Atividade;
-import ucb.aplicacao.service.AtividadeServico;
+import ucb.aplicacao.model.Tarefa;
+import ucb.aplicacao.service.TarefaServico;
 
 import java.util.List;
 import java.util.Scanner;
 
 public class AppToDo {
 
-    private static final AtividadeServico servico = new AtividadeServico();
+    private static final TarefaServico servico = new TarefaServico();
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -63,7 +63,7 @@ public class AppToDo {
     }
 
     private static void listarTarefas() {
-        List<Atividade> tarefas = servico.listar();
+        List<Tarefa> tarefas = servico.listar();
         if (tarefas.isEmpty()) {
             System.out.println("Nenhuma tarefa cadastrada.");
         } else {
@@ -111,4 +111,5 @@ public class AppToDo {
         System.out.println("\nPressione Enter para continuar...");
         scanner.nextLine();
     }
+
 }
