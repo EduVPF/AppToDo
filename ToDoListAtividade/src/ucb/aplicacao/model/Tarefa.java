@@ -11,7 +11,7 @@ public class Tarefa {
     private boolean completa;
     private final LocalDateTime dataCriacao;
 
-    public Atividade(int id, String titulo, String descricao) {
+    public Tarefa(int id, String titulo, String descricao) {
         this.id = id;
         this.titulo = titulo;
         this.descricao = descricao;
@@ -65,4 +65,5 @@ public class Tarefa {
     }
 
 }
+
 
