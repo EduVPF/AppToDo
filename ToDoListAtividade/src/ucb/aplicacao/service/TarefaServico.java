@@ -1,6 +1,6 @@
 package ucb.aplicacao.service;
 
-import ucb.aplicacao.model.Atividade;
+import ucb.aplicacao.model.Tarefa;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -47,3 +47,4 @@ public class TarefaServico {
     }
 
 }
+
